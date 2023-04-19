@@ -11,8 +11,6 @@
 
 namespace spidevpp {
 
-using namespace std::literals::chrono_literals;
-
 class Spi {
 
 public:
@@ -45,7 +43,7 @@ private:
 
 	int mFd;
 	uint8_t mBitsPerWord = 8;
-	std::chrono::microseconds mDelay = 0us;
+	std::chrono::microseconds mDelay = std::chrono::microseconds(0);
 	uint32_t mMode = 0;
 	uint32_t mSpeed = 500000;
 

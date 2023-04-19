@@ -64,7 +64,7 @@ Gpio::Value Gpio::getValue() {
 	std::ifstream valueFileStream(mValueFilePath, std::ios_base::in);
 	int value;
 	valueFileStream >> value;
-	mValue = value ? Value::HIGH : Value::LOW;
+	mValue = value ? Value::high : Value::low;
 	return mValue;
 }
 

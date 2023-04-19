@@ -15,11 +15,11 @@ public:
 	};
 
 	enum class Value {
-		LOW = 0,
-		HIGH = 1
+		low = 0,
+		high = 1
 	};
 
-	Gpio(unsigned int pin, Direction direction, Value initialValue = Value::LOW);
+	Gpio(unsigned int pin, Direction direction, Value initialValue = Value::low);
 
 	void setValue(Value);
 	Value getValue();
